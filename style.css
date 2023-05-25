@@ -20,12 +20,12 @@ nav{
     display: flex;
     width: 100%;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 10px 0;
 }
-@media screen and (max-width: 700px) {
-    nav{
-        flex-wrap: nowrap;
+@media screen and (max-width: 400px) {
+    nav ul {
+        align-items: flex-start;
     }
 }
 .cart-icon{
@@ -98,11 +98,11 @@ nav ul li a:hover::after {
 
 @media screen and (max-width: 700px) {
     .text-box h1{
+        font-family: 'Courier New', Courier, monospace;
         font-size: 100px;
         line-height: 100px;
     }
 }
-
 
 
 .text-box h3{
@@ -110,12 +110,27 @@ nav ul li a:hover::after {
     font-weight: 500;
     text-transform: uppercase;
 }
+@media screen and (max-width: 400px) {
+    .text-box h3{
+        font-weight: 200;
+        font-size: 1.5em;
+    }
+    .text-box p {
+        font-size: 2em;
+    }
+}
 
 .text-box .row{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 30px;
+}
+@media screen and (max-width: 400px) {
+    .text-box .row a {
+        display: block;
+        margin: 10px 10px;
+    }
 }
 
 .text-box a {
