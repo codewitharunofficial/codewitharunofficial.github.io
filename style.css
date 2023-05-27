@@ -22,6 +22,7 @@ nav{
     align-items: center;
     flex-wrap: nowrap;
     padding: 10px 0;
+    
 }
 @media screen and (max-width: 400px) {
     nav ul {
@@ -168,6 +169,19 @@ nav ul li a:hover::after {
     margin: 10px 5px;
 }
 
+.home {
+    position: absolute;
+    top: 20px;
+    color: #fff;
+    font-size: 2em;
+}
+
+.cart {
+    position: absolute;
+    top: 20px;
+    color: #fff;
+    font-size: 2em;
+}
 
 .preloader{
     background: #000 url(images/dribbble.gif) no-repeat center;
@@ -178,10 +192,13 @@ nav ul li a:hover::after {
     position: fixed;
 }
 
+.box {
+    display: flex;
+    justify-content: center;
+}
+
 .wrapper{
-    position:absolute;
-    top: 100px;
-    left: 400px;
+    position:relative;
     width: 400px;
     height: 440px;
     background: transparent;
@@ -195,7 +212,7 @@ nav ul li a:hover::after {
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
     transform: scale(0);
-    transition: transform .2s ease, height .2s ease;
+    transition: transform .5s ease, height .2s ease;
 }
 
 .wrapper.active-popup {
@@ -335,6 +352,7 @@ nav ul li a:hover::after {
     border: 2px solid black;
     border-radius: 3px;
     width: 100%;
+    cursor:pointer;
 }
 
 .login-register {
@@ -343,6 +361,7 @@ nav ul li a:hover::after {
     text-align: center;
     font-weight: 500;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .register-link {
@@ -352,6 +371,7 @@ nav ul li a:hover::after {
     font-weight: 600;
     margin-top: 10px;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 
