@@ -16,25 +16,15 @@
     padding-left: 3.75em;
 }
 
-header{
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
 nav{
     display: flex;
     width: 100%;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding: 10px 0;
     
 }
-@media screen and (max-width: 400px) {
-    nav ul {
-        align-items: flex-start;
-    }
-}
+
 .cart-icon{
     cursor: pointer;
 }
@@ -42,16 +32,19 @@ nav{
     cursor: pointer;
 }
 
-nav ul{
+.navbar-links{
     flex: 1;
     text-align: right;
-    padding-right: 30px;
+    padding-right: 20px;
 }
+
 
 nav ul li{
     display: inline-block;
+    justify-content: space-between;
     list-style: none;
-    margin: 10px 20px;
+    margin: 10px 10px;
+    text-align: right;
 }
 
 nav ul li a{
@@ -79,6 +72,49 @@ nav ul li a:hover::after {
 .btnLogin-popup {
     padding: 7px;
     margin-right: 5px;
+}
+.toggle-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+@media (max-width:600px) {
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    nav ul li {
+        width: 15rem;
+        text-align: center;
+        border: 1px solid gray;
+        padding: 10px;
+        margin: 3px;
+    }
+
+    .navbar-links .active{
+        display: flex;
+    }
+    
+
 }
 
 
@@ -113,7 +149,7 @@ nav ul li a:hover::after {
 @media screen and (max-width: 700px) {
     .text-box h1{
         font-family: 'Courier New', Courier, monospace;
-        font-size: 6.25em;
+        font-size: 100px;
         line-height: 100px;
     }
 }
@@ -183,12 +219,7 @@ nav ul li a:hover::after {
     font-size: 2em;
 }
 
-.cart {
-    position: absolute;
-    top: 20px;
-    color: #fff;
-    font-size: 2em;
-}
+
 
 .preloader{
     background: #000 url(images/dribbble.gif) no-repeat center;

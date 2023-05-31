@@ -3,11 +3,16 @@ window.addEventListener("load", function(){
     loader.style.display = "none";
 })
 
+
+
+
 const wrapper = document.querySelector('.wrapper');
 const loginLink = document.querySelector('.login-link');
 const registerLink = document.querySelector('.register-link');
 const btnPopup = document.querySelector('.btnLogin-popup');
 const iconClose = document.querySelector('.icon-close');
+const toggleButton = document.getElementsByClassName('.toggle-button');
+const navbarLinks = document.getElementsByClassName('.navbar-links');
 
 registerLink.addEventListener('click', ()=> {
     wrapper.classList.add('active');
@@ -24,4 +29,14 @@ btnPopup.addEventListener('click', ()=> {
 iconClose.addEventListener('click', ()=> {
     wrapper.classList.remove('active-popup');
 });
+
+toggleButton.addEventListener('click', ()=>{
+    navbarLinks.classList.add('active');
+});
+
+
+
+
+
+
 
