@@ -16,6 +16,7 @@
     padding-left: 3.75em;
 }
 
+
 nav{
     display: flex;
     width: 100%;
@@ -101,17 +102,30 @@ nav ul li a:hover::after {
         justify-content: center;
         align-items: center;
         width: 100%;
+        transition: .5s ease-in;
     }
     nav ul li {
         width: 15rem;
         text-align: center;
-        border: 1px solid gray;
+        border: none;
         padding: 10px;
         margin: 3px;
+        border-bottom: none;
+        transition: .5s;
     }
 
-    .navbar-links .active{
+    nav ul li:hover{
+       /* border: 2px solid gray;
+       border-radius: 5px; */
+       border-bottom:2px solid #000;
+    }
+
+    ul.navbar-links.active{
         display: flex;
+    }
+
+    .btnLogin-popup {
+        margin-left: 10px;
     }
     
 

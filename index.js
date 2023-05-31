@@ -11,8 +11,9 @@ const loginLink = document.querySelector('.login-link');
 const registerLink = document.querySelector('.register-link');
 const btnPopup = document.querySelector('.btnLogin-popup');
 const iconClose = document.querySelector('.icon-close');
-const toggleButton = document.getElementsByClassName('.toggle-button');
-const navbarLinks = document.getElementsByClassName('.navbar-links');
+const toggleButton = document.querySelector('.toggle-button');
+const navbarLinks = document.querySelector('.navbar-links');
+
 
 registerLink.addEventListener('click', ()=> {
     wrapper.classList.add('active');
@@ -31,8 +32,10 @@ iconClose.addEventListener('click', ()=> {
 });
 
 toggleButton.addEventListener('click', ()=>{
-    navbarLinks.classList.add('active');
+    navbarLinks.classList.toggle('active');
 });
+
+
 
 
 
