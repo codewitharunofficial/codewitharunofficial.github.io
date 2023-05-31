@@ -23,6 +23,7 @@ nav{
     align-items: center;
     flex-wrap: wrap;
     padding: 10px 0;
+    margin-top: 30px;
     
 }
 
@@ -45,6 +46,7 @@ nav ul li{
     justify-content: space-between;
     list-style: none;
     margin: 10px 10px;
+    margin-top: 15px;
     text-align: right;
 }
 
@@ -76,7 +78,7 @@ nav ul li a:hover::after {
 }
 .toggle-button {
     position: absolute;
-    top: 1rem;
+    top: 1.5rem;
     right: 1rem;
     display: none;
     flex-direction: column;
@@ -102,7 +104,7 @@ nav ul li a:hover::after {
         justify-content: center;
         align-items: center;
         width: 100%;
-        transition: .5s ease-in;
+        transition: .5s ease;
     }
     nav ul li {
         width: 15rem;
