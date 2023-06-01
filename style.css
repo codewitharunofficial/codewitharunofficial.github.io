@@ -277,7 +277,8 @@ nav ul li a:hover::after {
 
 @media (max-width:600px) {
     .wrapper{
-        margin-left: -5rem;
+        margin-left: -2.5rem;
+        background: transparent(-50%);
     }
 }
 
