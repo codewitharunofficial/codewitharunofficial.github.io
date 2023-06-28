@@ -36,6 +36,14 @@ export default function Navbar(props) {
                 {props.about}
               </Link>
             </li>
+<<<<<<< Updated upstream
+=======
+            <li className="nav-item">
+              <Link className="nav-link" to="/translator">
+                {props.Translator}
+              </Link>
+            </li>
+>>>>>>> Stashed changes
           </ul>
 
           <div

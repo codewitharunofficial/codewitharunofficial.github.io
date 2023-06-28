@@ -62,9 +62,15 @@ export default function TextFrom(props) {
             <textarea
               className="form-control"
               id="exampleFormControlTextarea1"
+<<<<<<< Updated upstream
               rows={8}
               onChange={handleOnChange}
               style={{backgroundColor: props.mode==="light"? "white" : "#102f5e", color: props.mode==='light'? 'black' : 'white', cursorColor:props.mode==='light'? 'black' : 'white'}}
+=======
+              rows={12}
+              onChange={handleOnChange}
+              style={{backgroundColor: props.mode==="light"? "white" : "#102f5e", color: props.mode==='light'? 'black' : 'white', cursorColor:props.mode==='light'? 'black' : 'white', resize: 'none', border: '2px solid gray'}}
+>>>>>>> Stashed changes
               value={text}
             />
           </div>

@@ -4,6 +4,10 @@ import About from "./Components/About";
 import Navbar from "./Components/Navbar";
 import TextFrom from "./Components/TextFrom";
 import Alert from "./Components/Alert";
+<<<<<<< Updated upstream
+=======
+import Translator from "./Components/Translator";
+>>>>>>> Stashed changes
 import {Routes, Route } from "react-router-dom";
 
 function App() {
@@ -41,6 +45,10 @@ function App() {
         title="TextUtils"
         about="About Us"
         home="Home"
+<<<<<<< Updated upstream
+=======
+        Translator = "Translator"
+>>>>>>> Stashed changes
         mode={mode}
         toggleMode={toggleMode}
         alert={alert}
@@ -61,6 +69,10 @@ function App() {
             }
           />
           <Route path="/about" element={<About mode={mode} />} />
+<<<<<<< Updated upstream
+=======
+          <Route path="/translator" element={ <Translator mode={mode} /> } />
+>>>>>>> Stashed changes
         </Routes>
     </>
   );
